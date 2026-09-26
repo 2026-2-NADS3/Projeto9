@@ -55,7 +55,7 @@ Através do aplicativo, os alunos navegam com facilidade pelo cronograma de ativ
 
 ### 📱 Instalação Direta via APK (Dispositivo Móvel)
 
-1. Faça o download do instalador `ProximaEtapa.apk` na seção de arquivos/releases deste repositório;
+1. Faça o download do instalador 'apk' na seção de arquivos/releases deste repositório;
 2. Transfira o arquivo para o seu aparelho Android (Android 8.0 Oreo - API level 26 ou superior);
 3. Abra o arquivo `.apk` no seu gerenciador de arquivos;
 4. Se necessário, autorize a opção **"Permitir a instalação de fontes desconhecidas"** nas configurações;
