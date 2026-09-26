@@ -1,0 +1,170 @@
+[2026-09-22 21:48:01] Iniciando backup...
+tar: Removendo `/' inicial dos nomes dos membros
+tar (child): /home/admin/proxima-etapa-so/backups/backup_2026-09-22_21-48-01.tar.gz: Função open falhou: Arquivo ou diretório inexistente
+tar (child): Error is not recoverable: exiting now
+tar: /home/admin/proxima-etapa-so/backups/backup_2026-09-22_21-48-01.tar.gz: Função write falhou: Pipe quebrado
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+[2026-09-22 21:48:01] ERRO ao criar o backup.
+[2026-09-22 21:57:02] Iniciando backup...
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-22 21:57:02] Backup criado: backup_2026-09-22_21-57-02.tar.gz
+[2026-09-22 21:57:02] Backup finalizado com sucesso.
+[2026-09-23 23:59:26] Iniciando backup...
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-23 23:59:26] Backup criado: backup_2026-09-23_23-59-26.tar.gz
+[2026-09-23 23:59:26] Backup finalizado com sucesso.
+[2026-09-24 00:02:39] Iniciando backup...
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:02:39] Backup criado: backup_2026-09-24_00-02-39.tar.gz
+[2026-09-24 00:02:39] Backup finalizado com sucesso.
+[2026-09-24 00:11:39] Iniciando backup...
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:11:39] Backup criado: backup_2026-09-24_00-11-39.tar.gz
+[2026-09-24 00:11:39] Backup finalizado com sucesso.
+[2026-09-24 00:12:50] Iniciando backup...
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:12:51] Backup criado: backup_2026-09-24_00-12-50.tar.gz
+[2026-09-24 00:12:51] Backup finalizado com sucesso.
+[2026-09-24 00:12:52] Iniciando backup...
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:12:52] Backup criado: backup_2026-09-24_00-12-52.tar.gz
+[2026-09-24 00:12:52] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-12-52.tar.gz
+[2026-09-24 00:12:52] Backup finalizado com sucesso.
+[2026-09-24 00:12:53] Iniciando backup...
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:12:53] Backup criado: backup_2026-09-24_00-12-53.tar.gz
+[2026-09-24 00:12:53] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-12-53.tar.gz
+[2026-09-24 00:12:53] Backup finalizado com sucesso.
+[2026-09-24 00:12:54] Iniciando backup...
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:12:54] Backup criado: backup_2026-09-24_00-12-54.tar.gz
+[2026-09-24 00:12:54] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-12-54.tar.gz
+[2026-09-24 00:12:54] Backup finalizado com sucesso.
+[2026-09-24 00:12:55] Iniciando backup...
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:12:55] Backup criado: backup_2026-09-24_00-12-55.tar.gz
+[2026-09-24 00:12:55] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-12-55.tar.gz
+[2026-09-24 00:12:55] Backup finalizado com sucesso.
+[2026-09-24 00:13:29] Iniciando backup...
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:13:29] Backup criado: backup_2026-09-24_00-13-29.tar.gz
+[2026-09-24 00:13:29] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-13-29.tar.gz
+[2026-09-24 00:13:29] Backup finalizado com sucesso.
+==========================================
+[2026-09-24 00:19:52] Iniciando backup...
+[2026-09-24 00:19:52] Tamanho dos dados: 12K
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:19:52] Backup criado: backup_2026-09-24_00-19-51.tar.gz
+[2026-09-24 00:19:52] Tamanho do backup: 4,0K
+[2026-09-24 00:19:52] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-19-51.tar.gz
+[2026-09-24 00:19:52] Backup finalizado com sucesso.
+==========================================
+==========================================
+[2026-09-24 00:19:52] Iniciando backup...
+[2026-09-24 00:19:52] Tamanho dos dados: 12K
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:19:52] Backup criado: backup_2026-09-24_00-19-52.tar.gz
+[2026-09-24 00:19:52] Tamanho do backup: 4,0K
+[2026-09-24 00:19:52] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-19-52.tar.gz
+[2026-09-24 00:19:52] Backup finalizado com sucesso.
+==========================================
+==========================================
+[2026-09-24 00:20:30] Iniciando backup...
+[2026-09-24 00:20:30] Tamanho dos dados: 12K
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:20:30] Backup criado: backup_2026-09-24_00-20-30.tar.gz
+[2026-09-24 00:20:30] Tamanho do backup: 4,0K
+[2026-09-24 00:20:30] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-20-30.tar.gz
+[2026-09-24 00:20:30] Backup finalizado com sucesso.
+==========================================
+==========================================
+[2026-09-24 00:23:20] Iniciando backup...
+[2026-09-24 00:23:20] Tamanho dos dados: 12K
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:23:20] Backup criado: backup_2026-09-24_00-23-20.tar.gz
+[2026-09-24 00:23:20] Tamanho do backup: 4,0K
+[2026-09-24 00:23:20] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-23-20.tar.gz
+[2026-09-24 00:23:20] Backup finalizado com sucesso.
+==========================================
+==========================================
+[2026-09-24 00:27:50] Iniciando backup...
+[2026-09-24 00:27:50] Tamanho dos dados: 12K
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:27:50] Backup criado: backup_2026-09-24_00-27-50.tar.gz
+[2026-09-24 00:27:50] Tamanho do backup: 4,0K
+[2026-09-24 00:27:50] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-27-50.tar.gz
+[2026-09-24 00:27:50] Backup finalizado com sucesso.
+==========================================
+==========================================
+[2026-09-24 00:28:14] Iniciando backup...
+[2026-09-24 00:28:14] Tamanho dos dados: 12K
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:28:14] Backup criado: backup_2026-09-24_00-28-14.tar.gz
+[2026-09-24 00:28:14] Tamanho do backup: 4,0K
+[2026-09-24 00:28:14] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-28-14.tar.gz
+[2026-09-24 00:28:14] Backup finalizado com sucesso.
+==========================================
+==========================================
+[2026-09-24 00:28:15] Iniciando backup...
+[2026-09-24 00:28:15] Tamanho dos dados: 12K
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:28:15] Backup criado: backup_2026-09-24_00-28-15.tar.gz
+[2026-09-24 00:28:15] Tamanho do backup: 4,0K
+[2026-09-24 00:28:15] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-28-15.tar.gz
+[2026-09-24 00:28:15] Backup finalizado com sucesso.
+==========================================
+==========================================
+[2026-09-24 00:28:15] Iniciando backup...
+[2026-09-24 00:28:15] Tamanho dos dados: 12K
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:28:15] Backup criado: backup_2026-09-24_00-28-15.tar.gz
+[2026-09-24 00:28:15] Tamanho do backup: 4,0K
+[2026-09-24 00:28:15] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-28-15.tar.gz
+[2026-09-24 00:28:15] Backup finalizado com sucesso.
+==========================================
+==========================================
+[2026-09-24 00:28:16] Iniciando backup...
+[2026-09-24 00:28:16] Tamanho dos dados: 12K
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:28:16] Backup criado: backup_2026-09-24_00-28-16.tar.gz
+[2026-09-24 00:28:16] Tamanho do backup: 4,0K
+[2026-09-24 00:28:16] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-28-16.tar.gz
+[2026-09-24 00:28:16] Backup finalizado com sucesso.
+==========================================
+==========================================
+[2026-09-24 00:28:17] Iniciando backup...
+[2026-09-24 00:28:17] Tamanho dos dados: 12K
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:28:17] Backup criado: backup_2026-09-24_00-28-17.tar.gz
+[2026-09-24 00:28:17] Tamanho do backup: 4,0K
+[2026-09-24 00:28:17] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-28-17.tar.gz
+[2026-09-24 00:28:17] Backup finalizado com sucesso.
+==========================================
+==========================================
+[2026-09-24 00:28:18] Iniciando backup...
+[2026-09-24 00:28:18] Tamanho dos dados: 12K
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:28:18] Backup criado: backup_2026-09-24_00-28-18.tar.gz
+[2026-09-24 00:28:18] Tamanho do backup: 4,0K
+[2026-09-24 00:28:18] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-28-18.tar.gz
+[2026-09-24 00:28:18] Backup finalizado com sucesso.
+==========================================
+==========================================
+[2026-09-24 00:28:19] Iniciando backup...
+[2026-09-24 00:28:19] Tamanho dos dados: 12K
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:28:19] Backup criado: backup_2026-09-24_00-28-19.tar.gz
+[2026-09-24 00:28:19] Tamanho do backup: 4,0K
+[2026-09-24 00:28:19] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-28-19.tar.gz
+[2026-09-24 00:28:19] Backup finalizado com sucesso.
+==========================================
+==========================================
+[2026-09-24 00:28:20] Iniciando backup...
+[2026-09-24 00:28:20] Tamanho dos dados: 12K
+tar: Removendo `/' inicial dos nomes dos membros
+[2026-09-24 00:28:20] Backup criado: backup_2026-09-24_00-28-20.tar.gz
+[2026-09-24 00:28:20] Tamanho do backup: 4,0K
+[2026-09-24 00:28:20] Backup antigo removido: /home/admin/proxima-etapa-so/backups/backup_2026-09-24_00-28-20.tar.gz
+[2026-09-24 00:28:20] Backup finalizado com sucesso.
+==========================================
