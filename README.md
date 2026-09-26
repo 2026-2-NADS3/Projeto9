@@ -1,101 +1,70 @@
-# FECAP - Fundação Escola de Comércio Álvares Penteado
+# 🎓 FECAP - Fundação Escola de Comércio Álvares Penteado
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7c90d19e-02f0-4baf-b285-cc70aa70e3f2" alt="FECAP" border="0" width="300">
+  <img src="https://github.com/user-attachments/assets/7c90d19e-02f0-4baf-b285-cc70aa70e3f2" alt="Logotipo FECAP" width="280">
 </p>
 
-## Integrantes: Arthur Carvalho, Nicollas Mota, Lucas Pereira, Cauã Aono
+## 👥 Integrantes
+- Arthur Carvalho, Nicollas Mota, Lucas Pereira e Cauã Aono
 
-## Professores Orientadores: Rodrigo Rosa, Jefferson de Oliveira, Aimar Martins, Francisco Escobar
+## 👨‍🏫 Orientadores
+Professores: **Aimar Martins**, **Francisco Escobar**, **Jefferson de Oliveira**, **Rodrigo Rosa**
 
 ---
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/48741a00-adec-47e5-85eb-d4acc189b7cb" alt="App Próxima Etapa" border="0" width="500">
-<br>
-<strong>Projeto ONG Próxima Etapa</strong> - Aplicativo desenvolvido com o foco de facilitar o acesso dos estudantes da ONG Próxima Etapa a cursos e palestras oferecidos por instituições de ensino superior parceiras da iniciativa.
+  <img src="https://github.com/user-attachments/assets/48741a00-adec-47e5-85eb-d4acc189b7cb" alt="Preview da Plataforma Próxima Etapa" width="480">
+  <br>
+  <b>Plataforma Mobile - ONG Próxima Etapa</b>
 </p>
 
-<p align="justify">
-O <strong>Projeto ONG Próxima Etapa</strong> é um aplicativo mobile desenvolvido para apoiar os estudantes atendidos pela ONG Próxima Etapa, facilitando o acesso a cursos e palestras oferecidos por instituições de ensino superior parceiras da iniciativa.
-</p>
+### 📌 Sobre o Projeto
 
-<p align="justify">
-Por meio do aplicativo, o aluno pode consultar a agenda de cursos e palestras e validar seu acesso por meio de um sistema de autenticação via QR Code.
-</p>
+O **Aplicativo Próxima Etapa** é uma solução mobile criada para conectar e engajar estudantes atendidos pela ONG Próxima Etapa com atividades de capacitação, palestras e cursos preparatórios disponibilizados por faculdades e universidades parceiras.
 
-<p align="justify">
-A iniciativa nasceu nas escolas públicas com o objetivo de mostrar aos alunos que existem mais possibilidades além do ensino médio, apresentando cursos de iniciação nas áreas financeira, administrativa, publicitária e contábil. Em parceria com instituições de ensino superior, como a própria FECAP, os estudantes são convidados a conhecer as instituições, seus cursos e as formas de ingresso na faculdade, seja por vestibular ou por outros meios.
-</p>
+Através do aplicativo, os alunos navegam com facilidade pelo cronograma de atividades e realizam a validação de presença em eventos presenciais via leitura de **QR Code**.
+
+> **Proposta de Impacto Social:**  
+> A iniciativa busca expandir os horizontes de estudantes da rede pública de ensino, apresentando caminhos de formação acadêmica e profissional nas áreas Contábil, Financeira, Publicitária e Administrativa. Em conjunto com instituições como a FECAP, o projeto aproxima os jovens do ambiente universitário, esclarecendo opções de carreira e formas de ingresso no ensino superior.
 
 ---
 
-## 📱 Funcionalidades
+## ⚡ Principais Recursos
 
-- Cadastro e login de usuários;
-- Informações sobre a ONG e os cursos ministrados em parceria com as faculdades;
-- Consulta da agenda de cursos;
-- Consulta da agenda de palestras;
-- Detalhes de cada curso;
-- Autenticação de acesso via QR Code;
-- Experiência mobile desenvolvida para dispositivos Android.
-
----
-
-## 🛠 Tecnologias Utilizadas
-
-- Figma
-- Android Studio
-- Java
-- Kotlin
-- Banco de dados SQL
+- 🔐 **Autenticação Segura:** Módulo de cadastro e login de usuários;
+- 📚 **Catálogo de Cursos & Eventos:** Visão geral da ONG e das formações oferecidas pelas faculdades parceiras;
+- 🗓️ **Cronograma Interativo:** Módulos separados para consulta de datas de aulas e palestras;
+- 🔍 **Detalhamento das Atividades:** Informações completas sobre ementas, locais e horários;
+- 🎟️ **Check-in via QR Code:** Validação de presença prática e automatizada;
+- 📱 **Interface Intuitiva:** Otimizada para ecossistema Android.
 
 ---
 
-## 📥 Instalação
+## 🛠️ Tecnologias e Ferramentas
 
-### Requisitos
-
-- Dispositivo Android 8.0 (API 26) ou superior;
-- Arquivo APK do aplicativo, disponível neste repositório.
-
-### Instalando o APK
-
-1. Faça o download do arquivo `ProximaEtapa.apk` disponível neste repositório;
-2. Transfira o APK para o dispositivo Android, caso necessário;
-3. Abra o arquivo APK;
-4. Caso solicitado, habilite a opção **"Instalar aplicativos de fontes desconhecidas"**;
-5. Conclua a instalação;
-6. Abra o aplicativo **Projeto ONG Próxima Etapa** e utilize normalmente.
-
-### Executando o Projeto no Android Studio
-
-1. Clone este repositório:
-
-```bash
-git clone https://github.com/2026-2-NADS3/Projeto3.git
-```
-
-2. Abra o projeto no Android Studio;
-3. Aguarde o download das dependências do Gradle;
-4. Conecte um dispositivo Android ou inicie um emulador;
-5. Execute o projeto através do botão **Run**.
+| Categoria | Tecnologia |
+| :--- | :--- |
+| **Prototipagem & UX/UI** | Figma |
+| **IDE de Desenvolvimento** | Android Studio |
+| **Linguagens de Programação** | Kotlin / Java |
+| **Persistência de Dados** | Banco de Dados SQL |
 
 ---
 
-## 🎯 Objetivos do Projeto
+## 🚀 Como Executar o Projeto
 
-- Facilitar o acesso dos alunos às informações da ONG e dos cursos oferecidos;
-- Aproximar os estudantes de escolas públicas das instituições de ensino superior parceiras;
-- Apresentar possibilidades acadêmicas e profissionais além do ensino médio;
-- Centralizar a agenda de cursos e palestras em uma plataforma mobile;
-- Agilizar o controle de acesso aos eventos por meio de QR Code;
-- Promover inclusão digital e educacional.
+### 📱 Instalação Direta via APK (Dispositivo Móvel)
+
+1. Faça o download do instalador `ProximaEtapa.apk` na seção de arquivos/releases deste repositório;
+2. Transfira o arquivo para o seu aparelho Android (Android 8.0 Oreo - API level 26 ou superior);
+3. Abra o arquivo `.apk` no seu gerenciador de arquivos;
+4. Se necessário, autorize a opção **"Permitir a instalação de fontes desconhecidas"** nas configurações;
+5. Siga as instruções em tela para concluir a instalação e execute o aplicativo.
 
 ---
 
-## 📋 Licença
+### 💻 Executando o Código Fonte no Android Studio
 
-Este projeto foi desenvolvido exclusivamente para fins acadêmicos na Fundação Escola de Comércio Álvares Penteado (FECAP).
-
-O uso, modificação e distribuição deste projeto devem respeitar os direitos dos autores e da instituição.
+1. **Clone este repositório** na sua máquina local:
+   ```bash
+   git clone [https://github.com/2026-2-NADS3/Projeto3.git](https://github.com/2026-2-NADS3/Projeto3.git)
