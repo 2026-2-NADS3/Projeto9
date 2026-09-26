@@ -56,7 +56,7 @@ Através do aplicativo, os alunos navegam com facilidade pelo cronograma de ativ
 ### 📱 Instalação Direta via APK (Dispositivo Móvel)
 
 1. Faça o download do instalador 'apk' na seção de arquivos/releases deste repositório;
-2. Transfira o arquivo para o seu aparelho Android utilizando a preset **Medium Phone** rodando **Android 9.0 (API 28)** ou superior (**Android 11 / API 30** recomendado).;
+2. Transfira o arquivo para o seu aparelho Android utilizando a preset **Medium Phone** rodando **Android 9.0 (API 28)** ou superior (**Android 11 / API 30** recomendado);
 3. Abra o arquivo `.apk` no seu gerenciador de arquivos;
 4. Se necessário, autorize a opção **"Permitir a instalação de fontes desconhecidas"** nas configurações;
 5. Siga as instruções em tela para concluir a instalação e execute o aplicativo.
