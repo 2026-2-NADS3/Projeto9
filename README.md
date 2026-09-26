@@ -63,8 +63,4 @@ Através do aplicativo, os alunos navegam com facilidade pelo cronograma de ativ
 
 ---
 
-### 💻 Executando o Código Fonte no Android Studio
 
-1. **Clone este repositório** na sua máquina local:
-   ```bash
-   git clone [https://github.com/2026-2-NADS3/Projeto3.git](https://github.com/2026-2-NADS3/Projeto3.git)
