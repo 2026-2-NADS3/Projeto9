@@ -1,4 +1,4 @@
-# 🎓 FECAP - Fundação Escola de Comércio Álvares Penteado
+# FECAP - Fundação Escola de Comércio Álvares Penteado
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7c90d19e-02f0-4baf-b285-cc70aa70e3f2" alt="Logotipo FECAP" width="280">
