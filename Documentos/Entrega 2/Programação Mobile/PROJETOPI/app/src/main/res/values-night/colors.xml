@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Versão das cores para o modo escuro -->
+    <color name="pe_primary">#D4BBFF</color>
+    <color name="pe_on_primary">#3D0D82</color>
+    <color name="pe_primary_container">#5419A0</color>
+    <color name="pe_on_primary_container">#EBDDFF</color>
+
+    <color name="pe_secondary">#A9D98F</color>
+    <color name="pe_on_secondary">#133800</color>
+    <color name="pe_secondary_container">#2A5117</color>
+    <color name="pe_on_secondary_container">#C6F1AE</color>
+
+    <color name="pe_tertiary">#F1C048</color>
+    <color name="pe_on_tertiary">#402D00</color>
+    <color name="pe_tertiary_container">#5C4300</color>
+    <color name="pe_on_tertiary_container">#FFDF94</color>
+</resources>

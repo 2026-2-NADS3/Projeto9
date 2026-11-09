@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.PROJETOPI" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pe_primary</item>
+        <item name="colorOnPrimary">@color/pe_on_primary</item>
+        <item name="colorPrimaryContainer">@color/pe_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/pe_on_primary_container</item>
+        <item name="colorSecondary">@color/pe_secondary</item>
+        <item name="colorOnSecondary">@color/pe_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/pe_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/pe_on_secondary_container</item>
+        <item name="colorTertiary">@color/pe_tertiary</item>
+        <item name="colorOnTertiary">@color/pe_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/pe_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/pe_on_tertiary_container</item>
+    </style>
+
+    <style name="Theme.PROJETOPI" parent="Base.Theme.PROJETOPI" />
+
+    <!-- Formato circular para fotos (ShapeableImageView) -->
+    <style name="ShapeAppearance.PROJETOPI.Circulo" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Etiquetas pequenas (DIA ÚNICO, CONCLUÍDO, PENDENTE...) -->
+    <style name="TextoTag">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_tag</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <!-- Títulos de seção -->
+    <style name="TituloSecao">
+        <item name="android:textAppearance">?attr/textAppearanceTitleMedium</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

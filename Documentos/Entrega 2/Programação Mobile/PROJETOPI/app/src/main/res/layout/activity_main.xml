@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Guidelines: margens laterais de 8% da largura da tela -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiaInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiaFim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <ImageView
+        android:id="@+id/logoPE"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:contentDescription="Logo Próxima Etapa"
+        app:layout_constraintBottom_toTopOf="@id/tvMainTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/proximaetapa" />
+
+    <TextView
+        android:id="@+id/tvMainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="BEM VINDO!"
+        android:textAppearance="?attr/textAppearanceDisplaySmall"
+        android:textColor="?attr/colorPrimary"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@id/tvMainSubtitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoPE" />
+
+    <TextView
+        android:id="@+id/tvMainSubtitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Seus cursos, sua agenda e suas presenças da Próxima Etapa em um só lugar."
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        app:layout_constraintBottom_toTopOf="@id/btnProximo"
+        app:layout_constraintEnd_toEndOf="@id/guiaFim"
+        app:layout_constraintStart_toStartOf="@id/guiaInicio"
+        app:layout_constraintTop_toBottomOf="@id/tvMainTitle" />
+
+    <Button
+        android:id="@+id/btnProximo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="Entrar"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guiaFim"
+        app:layout_constraintStart_toStartOf="@id/guiaInicio"
+        app:layout_constraintTop_toBottomOf="@id/tvMainSubtitulo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

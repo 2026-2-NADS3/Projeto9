@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Teste de perfil vocacional: 5 perguntas, cada resposta soma ponto para uma área -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestePerfilActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_voltar"
+        app:title="Teste de perfil" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvTesteIntro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Responda com sinceridade. Não existe resposta certa: o resultado mostra as áreas que mais combinam com você e recomenda cursos parceiros."
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPergunta1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="1. Em um trabalho em grupo, você prefere:"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTesteIntro" />
+
+            <!-- Cada RadioButton tem uma "tag" com a área que ele representa -->
+            <RadioGroup
+                android:id="@+id/rgPergunta1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPergunta1">
+
+                <RadioButton
+                    android:id="@+id/rbP1A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="ADM"
+                    android:text="Organizar as tarefas e liderar a equipe" />
+
+                <RadioButton
+                    android:id="@+id/rbP1B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="FIN"
+                    android:text="Cuidar do orçamento e dos números" />
+
+                <RadioButton
+                    android:id="@+id/rbP1C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="COM"
+                    android:text="Apresentar e convencer as pessoas" />
+
+                <RadioButton
+                    android:id="@+id/rbP1D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="TEC"
+                    android:text="Pesquisar ferramentas e resolver problemas técnicos" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvPergunta2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="2. Qual matéria da escola você mais gosta?"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rgPergunta1" />
+
+            <!-- Cada RadioButton tem uma "tag" com a área que ele representa -->
+            <RadioGroup
+                android:id="@+id/rgPergunta2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPergunta2">
+
+                <RadioButton
+                    android:id="@+id/rbP2A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="ADM"
+                    android:text="Sociologia ou Filosofia" />
+
+                <RadioButton
+                    android:id="@+id/rbP2B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="FIN"
+                    android:text="Matemática" />
+
+                <RadioButton
+                    android:id="@+id/rbP2C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="COM"
+                    android:text="Português ou Artes" />
+
+                <RadioButton
+                    android:id="@+id/rbP2D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="TEC"
+                    android:text="Física ou Informática" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvPergunta3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="3. Se você abrisse um negócio, cuidaria de:"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rgPergunta2" />
+
+            <!-- Cada RadioButton tem uma "tag" com a área que ele representa -->
+            <RadioGroup
+                android:id="@+id/rgPergunta3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPergunta3">
+
+                <RadioButton
+                    android:id="@+id/rbP3A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="ADM"
+                    android:text="Gestão das pessoas e dos processos" />
+
+                <RadioButton
+                    android:id="@+id/rbP3B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="FIN"
+                    android:text="Controle financeiro e investimentos" />
+
+                <RadioButton
+                    android:id="@+id/rbP3C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="COM"
+                    android:text="Marca, redes sociais e propaganda" />
+
+                <RadioButton
+                    android:id="@+id/rbP3D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="TEC"
+                    android:text="Site, aplicativo e automação" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvPergunta4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="4. No seu tempo livre, você gosta de:"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rgPergunta3" />
+
+            <!-- Cada RadioButton tem uma "tag" com a área que ele representa -->
+            <RadioGroup
+                android:id="@+id/rgPergunta4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPergunta4">
+
+                <RadioButton
+                    android:id="@+id/rbP4A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="ADM"
+                    android:text="Planejar eventos e atividades" />
+
+                <RadioButton
+                    android:id="@+id/rbP4B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="FIN"
+                    android:text="Acompanhar economia e jogos de estratégia" />
+
+                <RadioButton
+                    android:id="@+id/rbP4C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="COM"
+                    android:text="Criar vídeos, fotos ou textos" />
+
+                <RadioButton
+                    android:id="@+id/rbP4D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="TEC"
+                    android:text="Mexer em computador, jogos ou eletrônicos" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvPergunta5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="5. Qual frase combina mais com você?"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rgPergunta4" />
+
+            <!-- Cada RadioButton tem uma "tag" com a área que ele representa -->
+            <RadioGroup
+                android:id="@+id/rgPergunta5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPergunta5">
+
+                <RadioButton
+                    android:id="@+id/rbP5A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="ADM"
+                    android:text="Gosto de tomar decisões" />
+
+                <RadioButton
+                    android:id="@+id/rbP5B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="FIN"
+                    android:text="Gosto de tudo bem calculado" />
+
+                <RadioButton
+                    android:id="@+id/rbP5C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="COM"
+                    android:text="Gosto de me comunicar" />
+
+                <RadioButton
+                    android:id="@+id/rbP5D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="TEC"
+                    android:text="Gosto de inventar soluções" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnVerResultado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Ver meu resultado"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rgPergunta5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

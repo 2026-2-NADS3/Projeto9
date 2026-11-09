@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fundo creme com borda roxa tracejada (modelo do card da Próxima Etapa) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="28dp" />
+    <solid android:color="@color/card_creme" />
+    <stroke
+        android:width="4dp"
+        android:color="@color/card_roxo"
+        android:dashWidth="10dp"
+        android:dashGap="7dp" />
+</shape>

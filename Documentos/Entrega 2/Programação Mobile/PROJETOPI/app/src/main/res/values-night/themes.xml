@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modo escuro: mesmo tema, as cores vêm de values-night/colors.xml -->
+    <style name="Base.Theme.PROJETOPI" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pe_primary</item>
+        <item name="colorOnPrimary">@color/pe_on_primary</item>
+        <item name="colorPrimaryContainer">@color/pe_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/pe_on_primary_container</item>
+        <item name="colorSecondary">@color/pe_secondary</item>
+        <item name="colorOnSecondary">@color/pe_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/pe_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/pe_on_secondary_container</item>
+        <item name="colorTertiary">@color/pe_tertiary</item>
+        <item name="colorOnTertiary">@color/pe_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/pe_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/pe_on_tertiary_container</item>
+    </style>
+
+    </resources>
