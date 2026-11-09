@@ -1,0 +1,297 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.projetodopi"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="36" />
+10
+11    <!-- Acesso à API REST e verificação de conexão -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:7:5-79
+13-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:7:22-76
+14    <!-- Notificações (Android 13+ pede permissão ao usuário) -->
+15    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+15-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:9:5-77
+15-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:9:22-74
+16    <!-- Câmera para ler o QR Code do check-in -->
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:11:5-65
+17-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:11:22-62
+18
+19    <uses-feature
+19-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:12:5-14:36
+20        android:name="android.hardware.camera"
+20-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:13:9-47
+21        android:required="false" />
+21-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:14:9-33
+22
+23    <permission
+23-->[androidx.core:core:1.18.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\4b391fd37913bdecffc2c71ea11ae7e6\workspace\transformed\core-1.18.0\AndroidManifest.xml:22:5-24:47
+24        android:name="com.example.projetodopi.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.18.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\4b391fd37913bdecffc2c71ea11ae7e6\workspace\transformed\core-1.18.0\AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.18.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\4b391fd37913bdecffc2c71ea11ae7e6\workspace\transformed\core-1.18.0\AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.example.projetodopi.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.18.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\4b391fd37913bdecffc2c71ea11ae7e6\workspace\transformed\core-1.18.0\AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.18.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\4b391fd37913bdecffc2c71ea11ae7e6\workspace\transformed\core-1.18.0\AndroidManifest.xml:26:22-94
+28
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+30        android:name="android.hardware.camera.front"
+30-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+31        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+31-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+32    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+33    <uses-feature
+33-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+34        android:name="android.hardware.camera.autofocus"
+34-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+35        android:required="false" />
+35-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+36    <uses-feature
+36-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+37        android:name="android.hardware.camera.flash"
+37-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+38        android:required="false" />
+38-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+39    <uses-feature
+39-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+40        android:name="android.hardware.screen.landscape"
+40-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+41        android:required="false" />
+41-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+42    <uses-feature
+42-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+43        android:name="android.hardware.wifi"
+43-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+44        android:required="false" />
+44-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+45
+46    <application
+46-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:16:5-68:19
+47        android:name="com.example.projetodopi.ProximaEtapaApp"
+47-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:17:9-40
+48        android:allowBackup="true"
+48-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:18:9-35
+49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+49-->[androidx.core:core:1.18.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\4b391fd37913bdecffc2c71ea11ae7e6\workspace\transformed\core-1.18.0\AndroidManifest.xml:28:18-86
+50        android:dataExtractionRules="@xml/data_extraction_rules"
+50-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:19:9-65
+51        android:debuggable="true"
+52        android:extractNativeLibs="false"
+53        android:fullBackupContent="@xml/backup_rules"
+53-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:20:9-54
+54        android:icon="@mipmap/ic_launcher"
+54-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:21:9-43
+55        android:label="@string/app_name"
+55-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:22:9-41
+56        android:networkSecurityConfig="@xml/network_security_config"
+56-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:23:9-69
+57        android:roundIcon="@mipmap/ic_launcher_round"
+57-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:24:9-54
+58        android:supportsRtl="true"
+58-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:25:9-35
+59        android:theme="@style/Theme.PROJETOPI" >
+59-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:26:9-47
+60
+61        <!-- Tela inicial (abre ao tocar no ícone do app) -->
+62        <activity
+62-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:30:9-37:20
+63            android:name="com.example.projetodopi.MainActivity"
+63-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:31:13-41
+64            android:exported="true" >
+64-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:32:13-36
+65            <intent-filter>
+65-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:33:13-36:29
+66                <action android:name="android.intent.action.MAIN" />
+66-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:34:17-69
+66-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:34:25-66
+67
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:35:17-77
+68-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:35:27-74
+69            </intent-filter>
+70        </activity>
+71        <activity
+71-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:39:9-76
+72            android:name="com.example.projetodopi.LoginActivity"
+72-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:39:19-48
+73            android:exported="false" />
+73-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:39:49-73
+74        <activity
+74-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:40:9-106
+75            android:name="com.example.projetodopi.FormActivity"
+75-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:40:19-47
+76            android:exported="false"
+76-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:40:48-72
+77            android:launchMode="singleTop" />
+77-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:40:73-103
+78        <activity
+78-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:41:9-80
+79            android:name="com.example.projetodopi.ResultadoActivity"
+79-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:41:19-52
+80            android:exported="false" />
+80-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:41:53-77
+81        <activity
+81-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:42:9-83
+82            android:name="com.example.projetodopi.DetalheCursoActivity"
+82-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:42:19-55
+83            android:exported="false" />
+83-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:42:56-80
+84        <activity
+84-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:43:9-83
+85            android:name="com.example.projetodopi.NotificacoesActivity"
+85-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:43:19-55
+86            android:exported="false" />
+86-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:43:56-80
+87        <activity
+87-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:44:9-80
+88            android:name="com.example.projetodopi.HistoricoActivity"
+88-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:44:19-52
+89            android:exported="false" />
+89-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:44:53-77
+90        <activity
+90-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:45:9-83
+91            android:name="com.example.projetodopi.CertificadosActivity"
+91-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:45:19-55
+92            android:exported="false" />
+92-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:45:56-80
+93        <activity
+93-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:46:9-82
+94            android:name="com.example.projetodopi.CertificadoActivity"
+94-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:46:19-54
+95            android:exported="false" />
+95-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:46:55-79
+96        <activity
+96-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:47:9-82
+97            android:name="com.example.projetodopi.TestePerfilActivity"
+97-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:47:19-54
+98            android:exported="false" />
+98-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:47:55-79
+99        <activity
+99-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:48:9-85
+100            android:name="com.example.projetodopi.ResultadoTesteActivity"
+100-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:48:19-57
+101            android:exported="false" />
+101-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:48:58-82
+102        <activity
+102-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:49:9-80
+103            android:name="com.example.projetodopi.MensagensActivity"
+103-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:49:19-52
+104            android:exported="false" />
+104-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:49:53-77
+105        <activity
+105-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:50:9-83
+106            android:name="com.example.projetodopi.EditarPerfilActivity"
+106-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:50:19-55
+107            android:exported="false" />
+107-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:50:56-80
+108
+109        <!-- Leitor de QR Code (biblioteca ZXing): libera a rotação da tela -->
+110        <activity
+110-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:53:9-56:49
+111            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+111-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:54:13-74
+112            android:clearTaskOnLaunch="true"
+112-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+113            android:screenOrientation="fullSensor"
+113-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:55:13-51
+114            android:stateNotNeeded="true"
+114-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+115            android:theme="@style/zxing_CaptureTheme"
+115-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+116            android:windowSoftInputMode="stateAlwaysHidden" />
+116-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\88caf38cd276bf342c8d744234f180a4\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+117
+118        <!-- Compartilhamento da imagem do certificado -->
+119        <provider
+120            android:name="androidx.core.content.FileProvider"
+120-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:60:13-62
+121            android:authorities="com.example.projetodopi.fileprovider"
+121-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:61:13-64
+122            android:exported="false"
+122-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:62:13-37
+123            android:grantUriPermissions="true" >
+123-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:63:13-47
+124            <meta-data
+124-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:64:13-66:54
+125                android:name="android.support.FILE_PROVIDER_PATHS"
+125-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:65:17-67
+126                android:resource="@xml/file_paths" />
+126-->C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\src\main\AndroidManifest.xml:66:17-51
+127        </provider>
+128        <provider
+128-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\7c09d35b7d0dbb35c3df2f0a01366b88\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+129            android:name="androidx.startup.InitializationProvider"
+129-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\7c09d35b7d0dbb35c3df2f0a01366b88\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+130            android:authorities="com.example.projetodopi.androidx-startup"
+130-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\7c09d35b7d0dbb35c3df2f0a01366b88\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+131            android:exported="false" >
+131-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\7c09d35b7d0dbb35c3df2f0a01366b88\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+132            <meta-data
+132-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\7c09d35b7d0dbb35c3df2f0a01366b88\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+133                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+133-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\7c09d35b7d0dbb35c3df2f0a01366b88\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+134                android:value="androidx.startup" />
+134-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\7c09d35b7d0dbb35c3df2f0a01366b88\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+135            <meta-data
+135-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\7be29bdba9e737d7b05260246a45b2cc\workspace\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+136                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+136-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\7be29bdba9e737d7b05260246a45b2cc\workspace\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+137                android:value="androidx.startup" />
+137-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\7be29bdba9e737d7b05260246a45b2cc\workspace\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+138            <meta-data
+138-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+139                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+139-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+140                android:value="androidx.startup" />
+140-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+141        </provider>
+142
+143        <receiver
+143-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+144            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+144-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+145            android:directBootAware="false"
+145-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+146            android:enabled="true"
+146-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+147            android:exported="true"
+147-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+148            android:permission="android.permission.DUMP" >
+148-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+150                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+150-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+150-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+151            </intent-filter>
+152            <intent-filter>
+152-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+153                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+153-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+153-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+154            </intent-filter>
+155            <intent-filter>
+155-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+156                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+156-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+156-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+157            </intent-filter>
+158            <intent-filter>
+158-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+159                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+159-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+159-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cliente\.gradle\caches\9.1.0\transforms\f341a5a3b6d96bc4830fcfb440de58a0\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+160            </intent-filter>
+161        </receiver>
+162    </application>
+163
+164</manifest>

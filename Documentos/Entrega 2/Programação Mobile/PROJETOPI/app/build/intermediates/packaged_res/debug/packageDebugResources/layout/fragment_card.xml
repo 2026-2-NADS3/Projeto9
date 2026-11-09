@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Card Digital do aluno (frente com os cursos e verso com o QR Code de identificação) -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:id="@+id/containerCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- ============ FRENTE ============ -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardFrente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_tracejado"
+                android:elevation="4dp"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/ivLogoCard"
+                    android:layout_width="80dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="Logo Próxima Etapa"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/proximaetapa" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivFotoCard"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:contentDescription="Foto do aluno"
+                    android:padding="3dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.PROJETOPI.Circulo"
+                    app:strokeColor="@color/card_roxo"
+                    app:strokeWidth="3dp" />
+
+                <!-- Selo com a quantidade de cursos concluídos -->
+                <TextView
+                    android:id="@+id/tvQtdConcluidos"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:background="@drawable/bg_badge_cursos"
+                    android:gravity="center"
+                    android:textColor="@color/card_texto"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvLegendaConcluidos"
+                    app:layout_constraintStart_toStartOf="@id/tvLegendaConcluidos"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvLegendaConcluidos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="CURSOS\nCONCLUÍDOS"
+                    android:textColor="@color/card_texto"
+                    android:textSize="9dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvQtdConcluidos" />
+
+                <View
+                    android:id="@+id/pontoEsquerdo"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@drawable/bg_ponto_roxo"
+                    app:layout_constraintBottom_toBottomOf="@id/tvNomeCard"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvNomeCard" />
+
+                <TextView
+                    android:id="@+id/tvNomeCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/card_texto"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toStartOf="@id/pontoDireito"
+                    app:layout_constraintStart_toEndOf="@id/pontoEsquerdo"
+                    app:layout_constraintTop_toBottomOf="@id/ivFotoCard" />
+
+                <View
+                    android:id="@+id/pontoDireito"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@drawable/bg_ponto_roxo"
+                    app:layout_constraintBottom_toBottomOf="@id/tvNomeCard"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvNomeCard" />
+
+                <TextView
+                    android:id="@+id/tvEscolaCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/card_texto"
+                    android:textSize="13dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvNomeCard" />
+
+                <!-- Linha vertical entre as duas colunas de cursos -->
+                <View
+                    android:id="@+id/linhaCentral"
+                    android:layout_width="2dp"
+                    android:layout_height="0dp"
+                    android:background="@color/card_roxo"
+                    app:layout_constraintBottom_toBottomOf="@id/rvCursosCard"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/rvCursosCard" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCursosCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:nestedScrollingEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvEscolaCard" />
+
+                <TextView
+                    android:id="@+id/tvRodapeCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:textColor="@color/card_cinza"
+                    android:textSize="11dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rvCursosCard" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- ============ VERSO ============ -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardVerso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_tracejado"
+                android:elevation="4dp"
+                android:padding="24dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvTituloVerso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Identificação do aluno"
+                    android:textColor="@color/card_texto"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivQrCodeAluno"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/white"
+                    android:contentDescription="QR Code de identificação do aluno"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTituloVerso" />
+
+                <TextView
+                    android:id="@+id/tvNomeVerso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:textColor="@color/card_texto"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivQrCodeAluno" />
+
+                <TextView
+                    android:id="@+id/tvDadosVerso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textColor="@color/card_texto"
+                    android:textSize="13dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvNomeVerso" />
+
+                <TextView
+                    android:id="@+id/tvAvisoVerso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="Apresente este código na recepção dos encontros e eventos parceiros."
+                    android:textColor="@color/card_cinza"
+                    android:textSize="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDadosVerso" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvDicaCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Toque no card para virar. Os cursos em verde já foram concluídos."
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerCard" />
+
+        <Button
+            android:id="@+id/btnVirarCard"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Mostrar QR Code"
+            app:icon="@drawable/ic_qr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDicaCard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

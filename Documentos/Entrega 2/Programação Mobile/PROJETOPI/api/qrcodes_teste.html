@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QR Codes de teste</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 24px; background: #fafafa; color: #222; }
+  h1 { color: #6A2FB8; margin-bottom: 4px; }
+  p { max-width: 760px; }
+  .grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .card { background: #fff; border: 2px solid #A46BF5; border-radius: 16px; padding: 16px; text-align: center; }
+  .card.feito { opacity: .45; }
+  .qr { display: flex; justify-content: center; margin-bottom: 8px; }
+  .cod { font-weight: 700; font-size: 18px; letter-spacing: 1px; }
+  .tit { margin-top: 4px; }
+  .info { font-size: 13px; color: #555; margin-top: 4px; }
+</style>
+</head>
+<body>
+  <h1>QR Codes dos encontros (teste do check-in)</h1>
+  <p>Abra esta página no computador e aponte a câmera do celular (aba <b>Check-in → Escanear QR Code</b>).
+  No emulador, digite o código no campo "Ou digite o código". Os cards apagados já têm presença registrada nos dados de demonstração.</p>
+  <div class="grade">
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-001"></div>
+      <div class="cod">PE-ENC-001</div>
+      <div class="tit">Empreendedorismo - Encontro 1</div>
+      <div class="info">18/08/2026 às 19:00 · presença já registrada</div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-002"></div>
+      <div class="cod">PE-ENC-002</div>
+      <div class="tit">Empreendedorismo - Encontro 2</div>
+      <div class="info">25/08/2026 às 19:00 · presença já registrada</div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-003"></div>
+      <div class="cod">PE-ENC-003</div>
+      <div class="tit">Técnicas de RH</div>
+      <div class="info">29/08/2026 às 09:00 · <b>dia único</b> · presença já registrada</div>
+    </div>
+    <div class="card">
+      <div class="qr" data-codigo="PE-ENC-004"></div>
+      <div class="cod">PE-ENC-004</div>
+      <div class="tit">Simulação da ONU</div>
+      <div class="info">14/11/2026 às 08:30 · <b>dia único</b></div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-005"></div>
+      <div class="cod">PE-ENC-005</div>
+      <div class="tit">Softskills</div>
+      <div class="info">05/09/2026 às 09:00 · <b>dia único</b> · presença já registrada</div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-006"></div>
+      <div class="cod">PE-ENC-006</div>
+      <div class="tit">Educação Financeira - Encontro 1</div>
+      <div class="info">27/10/2026 às 19:00 · presença já registrada</div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-007"></div>
+      <div class="cod">PE-ENC-007</div>
+      <div class="tit">Educação Financeira - Encontro 2</div>
+      <div class="info">29/10/2026 às 19:00 · presença já registrada</div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-008"></div>
+      <div class="cod">PE-ENC-008</div>
+      <div class="tit">Educação Financeira - Encontro 3</div>
+      <div class="info">03/11/2026 às 19:00 · presença já registrada</div>
+    </div>
+    <div class="card">
+      <div class="qr" data-codigo="PE-ENC-009"></div>
+      <div class="cod">PE-ENC-009</div>
+      <div class="tit">Educação Financeira - Encontro 4</div>
+      <div class="info">10/11/2026 às 19:00</div>
+    </div>
+    <div class="card">
+      <div class="qr" data-codigo="PE-ENC-010"></div>
+      <div class="cod">PE-ENC-010</div>
+      <div class="tit">Educação Financeira - Encontro 5</div>
+      <div class="info">12/11/2026 às 19:00</div>
+    </div>
+    <div class="card">
+      <div class="qr" data-codigo="PE-ENC-011"></div>
+      <div class="cod">PE-ENC-011</div>
+      <div class="tit">Educação Financeira - Encontro 6</div>
+      <div class="info">17/11/2026 às 19:00</div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-012"></div>
+      <div class="cod">PE-ENC-012</div>
+      <div class="tit">Comunicação Eficaz - Encontro 1</div>
+      <div class="info">04/11/2026 às 19:00 · presença já registrada</div>
+    </div>
+    <div class="card">
+      <div class="qr" data-codigo="PE-ENC-013"></div>
+      <div class="cod">PE-ENC-013</div>
+      <div class="tit">Comunicação Eficaz - Encontro 2</div>
+      <div class="info">11/11/2026 às 19:00</div>
+    </div>
+    <div class="card">
+      <div class="qr" data-codigo="PE-ENC-014"></div>
+      <div class="cod">PE-ENC-014</div>
+      <div class="tit">Comunicação Eficaz - Encontro 3</div>
+      <div class="info">18/11/2026 às 19:00</div>
+    </div>
+    <div class="card">
+      <div class="qr" data-codigo="PE-ENC-015"></div>
+      <div class="cod">PE-ENC-015</div>
+      <div class="tit">Comunicação Eficaz - Encontro 4</div>
+      <div class="info">25/11/2026 às 19:00</div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-016"></div>
+      <div class="cod">PE-ENC-016</div>
+      <div class="tit">Oratória - Encontro 1</div>
+      <div class="info">15/09/2026 às 19:00 · presença já registrada</div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-017"></div>
+      <div class="cod">PE-ENC-017</div>
+      <div class="tit">Oratória - Encontro 2</div>
+      <div class="info">22/09/2026 às 19:00 · presença já registrada</div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-018"></div>
+      <div class="cod">PE-ENC-018</div>
+      <div class="tit">Tecnologia</div>
+      <div class="info">26/09/2026 às 09:00 · <b>dia único</b> · presença já registrada</div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-019"></div>
+      <div class="cod">PE-ENC-019</div>
+      <div class="tit">Imagem Pessoal e Networking</div>
+      <div class="info">03/10/2026 às 09:00 · <b>dia único</b> · presença já registrada</div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-020"></div>
+      <div class="cod">PE-ENC-020</div>
+      <div class="tit">Liderança - Encontro 1</div>
+      <div class="info">06/10/2026 às 19:00 · presença já registrada</div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-021"></div>
+      <div class="cod">PE-ENC-021</div>
+      <div class="tit">Liderança - Encontro 2</div>
+      <div class="info">13/10/2026 às 19:00 · presença já registrada</div>
+    </div>
+    <div class="card feito">
+      <div class="qr" data-codigo="PE-ENC-022"></div>
+      <div class="cod">PE-ENC-022</div>
+      <div class="tit">Inovação e Criatividade</div>
+      <div class="info">17/10/2026 às 09:00 · <b>dia único</b> · presença já registrada</div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    document.querySelectorAll('.qr').forEach(function (el) {
+      new QRCode(el, { text: el.dataset.codigo, width: 170, height: 170 });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuSincronizar"
+        android:icon="@drawable/ic_sync"
+        android:title="Sincronizar"
+        app:showAsAction="always" />
+    <!-- Sino com contador de notificações não lidas -->
+    <item
+        android:id="@+id/menuNotificacoes"
+        android:title="Notificações"
+        app:actionLayout="@layout/menu_notificacao_badge"
+        app:showAsAction="always" />
+</menu>

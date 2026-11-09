@@ -1,0 +1,6 @@
+com.example.projetodopi.test.app-tracing-1.2.0-0 C:\Users\Cliente\.gradle\caches\9.1.0\transforms\902ba6b24a073355f9587e4131bec013\workspace\transformed\tracing-1.2.0\res
+com.example.projetodopi.test.app-core-1.7.0-1 C:\Users\Cliente\.gradle\caches\9.1.0\transforms\cee638cee3451deb7cd6098d3c0dc184\workspace\transformed\core-1.7.0\res
+com.example.projetodopi.test.app-updated_navigation_xml-2 C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\build\generated\updated_navigation_xml\debugAndroidTest
+com.example.projetodopi.test.app-packageDebugAndroidTestResources-3 C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\build\intermediates\incremental\debugAndroidTest\packageDebugAndroidTestResources\merged.dir
+com.example.projetodopi.test.app-packageDebugAndroidTestResources-4 C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\build\intermediates\incremental\debugAndroidTest\packageDebugAndroidTestResources\stripped.dir
+com.example.projetodopi.test.app-debugAndroidTest-5 C:\Users\Cliente\Documents\GitHub\Projeto9\Documentos\Entrega 2\Programação Mobile\PROJETOPI\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

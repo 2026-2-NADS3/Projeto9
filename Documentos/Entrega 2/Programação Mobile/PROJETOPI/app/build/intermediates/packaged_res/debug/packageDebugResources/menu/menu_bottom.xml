@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Abas da Área do Aluno (BottomNavigationView) -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navCursos" android:icon="@drawable/ic_cursos" android:title="Cursos" />
+    <item android:id="@+id/navAgenda" android:icon="@drawable/ic_agenda" android:title="Agenda" />
+    <item android:id="@+id/navCheckin" android:icon="@drawable/ic_qr" android:title="Check-in" />
+    <item android:id="@+id/navCard" android:icon="@drawable/ic_card" android:title="Card" />
+    <item android:id="@+id/navPerfil" android:icon="@drawable/ic_perfil" android:title="Perfil" />
+</menu>

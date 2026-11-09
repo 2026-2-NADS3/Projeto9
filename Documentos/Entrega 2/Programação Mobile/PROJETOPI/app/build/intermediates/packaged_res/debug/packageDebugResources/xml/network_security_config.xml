@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Permite HTTP (sem HTTPS) para testar a API local (PHP no XAMPP).
+     Em produção, a API deve usar HTTPS e esta liberação deve ser removida. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

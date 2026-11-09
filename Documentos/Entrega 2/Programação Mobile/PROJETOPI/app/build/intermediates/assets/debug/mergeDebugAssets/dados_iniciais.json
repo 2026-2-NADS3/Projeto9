@@ -1,0 +1,724 @@
+{
+  "alunos": [
+    {
+      "id": 1,
+      "nome": "Ana Beatriz Souza",
+      "email": "aluno@proximaetapa.org",
+      "senha": "123456",
+      "telefone": "(11) 98888-7777",
+      "escola": "E.E. Jardim das Flores",
+      "serie": "3º ano",
+      "perfilVocacional": ""
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "titulo": "Empreendedorismo",
+      "descricao": "Como transformar uma ideia em negócio: modelo de negócio, público-alvo e primeiros passos para empreender.",
+      "instituicao": "FECAP",
+      "area": "ADM",
+      "cargaHoraria": 8,
+      "dataInicio": "2026-08-18",
+      "dataFim": "2026-08-25",
+      "horario": "19h00 às 21h00",
+      "local": "FECAP - Liberdade, Sala 302",
+      "imagem": "curso1",
+      "totalAulas": 2
+    },
+    {
+      "id": 2,
+      "titulo": "Técnicas de RH",
+      "descricao": "Recrutamento, entrevistas e como se destacar em processos seletivos.",
+      "instituicao": "ESPM",
+      "area": "ADM",
+      "cargaHoraria": 4,
+      "dataInicio": "2026-08-29",
+      "dataFim": "2026-08-29",
+      "horario": "09h00 às 13h00",
+      "local": "ESPM - Vila Mariana",
+      "imagem": "curso1",
+      "totalAulas": 1
+    },
+    {
+      "id": 3,
+      "titulo": "Simulação da ONU",
+      "descricao": "Um dia inteiro representando países em um comitê da ONU: negociação, oratória e argumentação.",
+      "instituicao": "Insper",
+      "area": "COM",
+      "cargaHoraria": 8,
+      "dataInicio": "2026-11-14",
+      "dataFim": "2026-11-14",
+      "horario": "08h30 às 17h00",
+      "local": "Insper - Vila Olímpia, Auditório",
+      "imagem": "curso3",
+      "totalAulas": 1
+    },
+    {
+      "id": 4,
+      "titulo": "Direito Constitucional",
+      "descricao": "Introdução aos direitos e deveres do cidadão e à organização do Estado brasileiro.",
+      "instituicao": "FAAP",
+      "area": "ADM",
+      "cargaHoraria": 6,
+      "dataInicio": "2026-12-01",
+      "dataFim": "2026-12-08",
+      "horario": "19h00 às 21h00",
+      "local": "FAAP - Higienópolis",
+      "imagem": "curso1",
+      "totalAulas": 2
+    },
+    {
+      "id": 5,
+      "titulo": "Softskills",
+      "descricao": "Comunicação, trabalho em equipe, empatia e gestão do tempo.",
+      "instituicao": "Oswaldo Cruz",
+      "area": "COM",
+      "cargaHoraria": 6,
+      "dataInicio": "2026-09-05",
+      "dataFim": "2026-09-05",
+      "horario": "09h00 às 15h00",
+      "local": "Faculdades Oswaldo Cruz - Barra Funda",
+      "imagem": "curso3",
+      "totalAulas": 1
+    },
+    {
+      "id": 6,
+      "titulo": "Educação Financeira",
+      "descricao": "Orçamento pessoal, juros, crédito consciente e primeiros investimentos.",
+      "instituicao": "FECAP",
+      "area": "FIN",
+      "cargaHoraria": 12,
+      "dataInicio": "2026-10-27",
+      "dataFim": "2026-11-17",
+      "horario": "19h00 às 21h00",
+      "local": "FECAP - Liberdade, Laboratório 2",
+      "imagem": "curso2",
+      "totalAulas": 6
+    },
+    {
+      "id": 7,
+      "titulo": "Comunicação Eficaz",
+      "descricao": "Como falar em público, escrever com clareza e se comunicar em entrevistas e apresentações.",
+      "instituicao": "ESPM",
+      "area": "COM",
+      "cargaHoraria": 8,
+      "dataInicio": "2026-11-04",
+      "dataFim": "2026-11-25",
+      "horario": "19h00 às 21h00",
+      "local": "ESPM - Vila Mariana, Sala 12",
+      "imagem": "curso3",
+      "totalAulas": 4
+    },
+    {
+      "id": 8,
+      "titulo": "Carreira 2.0",
+      "descricao": "Currículo, LinkedIn e planejamento de carreira para o primeiro emprego.",
+      "instituicao": "FECAP",
+      "area": "ADM",
+      "cargaHoraria": 4,
+      "dataInicio": "2026-12-12",
+      "dataFim": "2026-12-12",
+      "horario": "09h00 às 13h00",
+      "local": "FECAP - Liberdade, Auditório",
+      "imagem": "curso1",
+      "totalAulas": 1
+    },
+    {
+      "id": 9,
+      "titulo": "Oratória",
+      "descricao": "Técnicas de voz, postura e organização das ideias para falar com segurança.",
+      "instituicao": "FECAP",
+      "area": "COM",
+      "cargaHoraria": 8,
+      "dataInicio": "2026-09-15",
+      "dataFim": "2026-09-22",
+      "horario": "19h00 às 21h00",
+      "local": "FECAP - Liberdade, Sala 105",
+      "imagem": "curso3",
+      "totalAulas": 2
+    },
+    {
+      "id": 10,
+      "titulo": "Tecnologia",
+      "descricao": "Panorama das carreiras de tecnologia: programação, dados, design de produtos e segurança.",
+      "instituicao": "FECAP",
+      "area": "TEC",
+      "cargaHoraria": 6,
+      "dataInicio": "2026-09-26",
+      "dataFim": "2026-09-26",
+      "horario": "09h00 às 15h00",
+      "local": "FECAP - Liberdade, Laboratório de Informática",
+      "imagem": "curso2",
+      "totalAulas": 1
+    },
+    {
+      "id": 11,
+      "titulo": "Imagem Pessoal e Networking",
+      "descricao": "Como construir uma boa imagem profissional e criar uma rede de contatos.",
+      "instituicao": "FECAP",
+      "area": "COM",
+      "cargaHoraria": 4,
+      "dataInicio": "2026-10-03",
+      "dataFim": "2026-10-03",
+      "horario": "09h00 às 13h00",
+      "local": "FECAP - Liberdade, Sala 302",
+      "imagem": "curso3",
+      "totalAulas": 1
+    },
+    {
+      "id": 12,
+      "titulo": "Intercâmbio",
+      "descricao": "Bolsas, programas e dicas para estudar fora do país.",
+      "instituicao": "Insper",
+      "area": "ADM",
+      "cargaHoraria": 3,
+      "dataInicio": "2026-12-05",
+      "dataFim": "2026-12-05",
+      "horario": "10h00 às 13h00",
+      "local": "Insper - Vila Olímpia",
+      "imagem": "curso1",
+      "totalAulas": 1
+    },
+    {
+      "id": 13,
+      "titulo": "Inteligência Emocional",
+      "descricao": "Autoconhecimento, controle da ansiedade e relações saudáveis na escola e no trabalho.",
+      "instituicao": "FSA",
+      "area": "ADM",
+      "cargaHoraria": 6,
+      "dataInicio": "2026-11-24",
+      "dataFim": "2026-12-01",
+      "horario": "19h00 às 21h00",
+      "local": "Centro Universitário FSA - Santo André",
+      "imagem": "curso1",
+      "totalAulas": 2
+    },
+    {
+      "id": 14,
+      "titulo": "Liderança",
+      "descricao": "Estilos de liderança, tomada de decisão e como motivar uma equipe.",
+      "instituicao": "FECAP",
+      "area": "ADM",
+      "cargaHoraria": 8,
+      "dataInicio": "2026-10-06",
+      "dataFim": "2026-10-13",
+      "horario": "19h00 às 21h00",
+      "local": "FECAP - Liberdade, Sala 210",
+      "imagem": "curso1",
+      "totalAulas": 2
+    },
+    {
+      "id": 15,
+      "titulo": "Inteligência Artificial",
+      "descricao": "O que é IA, como ela funciona e como usá-la de forma ética nos estudos e no trabalho.",
+      "instituicao": "Inteli",
+      "area": "TEC",
+      "cargaHoraria": 6,
+      "dataInicio": "2026-11-28",
+      "dataFim": "2026-11-28",
+      "horario": "09h00 às 15h00",
+      "local": "Inteli - Butantã",
+      "imagem": "curso2",
+      "totalAulas": 1
+    },
+    {
+      "id": 16,
+      "titulo": "Inovação e Criatividade",
+      "descricao": "Design thinking na prática: do problema à solução em um dia de oficina.",
+      "instituicao": "FECAP",
+      "area": "TEC",
+      "cargaHoraria": 6,
+      "dataInicio": "2026-10-17",
+      "dataFim": "2026-10-17",
+      "horario": "09h00 às 15h00",
+      "local": "FECAP - Liberdade, Sala Maker",
+      "imagem": "curso2",
+      "totalAulas": 1
+    }
+  ],
+  "agenda": [
+    {
+      "id": 1,
+      "alunoId": 1,
+      "cursoId": 1,
+      "titulo": "Empreendedorismo - Encontro 1",
+      "data": "2026-08-18",
+      "horario": "19:00",
+      "local": "FECAP - Liberdade, Sala 302",
+      "codigoQr": "PE-ENC-001"
+    },
+    {
+      "id": 2,
+      "alunoId": 1,
+      "cursoId": 1,
+      "titulo": "Empreendedorismo - Encontro 2",
+      "data": "2026-08-25",
+      "horario": "19:00",
+      "local": "FECAP - Liberdade, Sala 302",
+      "codigoQr": "PE-ENC-002"
+    },
+    {
+      "id": 3,
+      "alunoId": 1,
+      "cursoId": 2,
+      "titulo": "Técnicas de RH",
+      "data": "2026-08-29",
+      "horario": "09:00",
+      "local": "ESPM - Vila Mariana",
+      "codigoQr": "PE-ENC-003"
+    },
+    {
+      "id": 4,
+      "alunoId": 1,
+      "cursoId": 3,
+      "titulo": "Simulação da ONU",
+      "data": "2026-11-14",
+      "horario": "08:30",
+      "local": "Insper - Vila Olímpia, Auditório",
+      "codigoQr": "PE-ENC-004"
+    },
+    {
+      "id": 5,
+      "alunoId": 1,
+      "cursoId": 5,
+      "titulo": "Softskills",
+      "data": "2026-09-05",
+      "horario": "09:00",
+      "local": "Faculdades Oswaldo Cruz - Barra Funda",
+      "codigoQr": "PE-ENC-005"
+    },
+    {
+      "id": 6,
+      "alunoId": 1,
+      "cursoId": 6,
+      "titulo": "Educação Financeira - Encontro 1",
+      "data": "2026-10-27",
+      "horario": "19:00",
+      "local": "FECAP - Liberdade, Laboratório 2",
+      "codigoQr": "PE-ENC-006"
+    },
+    {
+      "id": 7,
+      "alunoId": 1,
+      "cursoId": 6,
+      "titulo": "Educação Financeira - Encontro 2",
+      "data": "2026-10-29",
+      "horario": "19:00",
+      "local": "FECAP - Liberdade, Laboratório 2",
+      "codigoQr": "PE-ENC-007"
+    },
+    {
+      "id": 8,
+      "alunoId": 1,
+      "cursoId": 6,
+      "titulo": "Educação Financeira - Encontro 3",
+      "data": "2026-11-03",
+      "horario": "19:00",
+      "local": "FECAP - Liberdade, Laboratório 2",
+      "codigoQr": "PE-ENC-008"
+    },
+    {
+      "id": 9,
+      "alunoId": 1,
+      "cursoId": 6,
+      "titulo": "Educação Financeira - Encontro 4",
+      "data": "2026-11-10",
+      "horario": "19:00",
+      "local": "FECAP - Liberdade, Laboratório 2",
+      "codigoQr": "PE-ENC-009"
+    },
+    {
+      "id": 10,
+      "alunoId": 1,
+      "cursoId": 6,
+      "titulo": "Educação Financeira - Encontro 5",
+      "data": "2026-11-12",
+      "horario": "19:00",
+      "local": "FECAP - Liberdade, Laboratório 2",
+      "codigoQr": "PE-ENC-010"
+    },
+    {
+      "id": 11,
+      "alunoId": 1,
+      "cursoId": 6,
+      "titulo": "Educação Financeira - Encontro 6",
+      "data": "2026-11-17",
+      "horario": "19:00",
+      "local": "FECAP - Liberdade, Laboratório 2",
+      "codigoQr": "PE-ENC-011"
+    },
+    {
+      "id": 12,
+      "alunoId": 1,
+      "cursoId": 7,
+      "titulo": "Comunicação Eficaz - Encontro 1",
+      "data": "2026-11-04",
+      "horario": "19:00",
+      "local": "ESPM - Vila Mariana, Sala 12",
+      "codigoQr": "PE-ENC-012"
+    },
+    {
+      "id": 13,
+      "alunoId": 1,
+      "cursoId": 7,
+      "titulo": "Comunicação Eficaz - Encontro 2",
+      "data": "2026-11-11",
+      "horario": "19:00",
+      "local": "ESPM - Vila Mariana, Sala 12",
+      "codigoQr": "PE-ENC-013"
+    },
+    {
+      "id": 14,
+      "alunoId": 1,
+      "cursoId": 7,
+      "titulo": "Comunicação Eficaz - Encontro 3",
+      "data": "2026-11-18",
+      "horario": "19:00",
+      "local": "ESPM - Vila Mariana, Sala 12",
+      "codigoQr": "PE-ENC-014"
+    },
+    {
+      "id": 15,
+      "alunoId": 1,
+      "cursoId": 7,
+      "titulo": "Comunicação Eficaz - Encontro 4",
+      "data": "2026-11-25",
+      "horario": "19:00",
+      "local": "ESPM - Vila Mariana, Sala 12",
+      "codigoQr": "PE-ENC-015"
+    },
+    {
+      "id": 16,
+      "alunoId": 1,
+      "cursoId": 9,
+      "titulo": "Oratória - Encontro 1",
+      "data": "2026-09-15",
+      "horario": "19:00",
+      "local": "FECAP - Liberdade, Sala 105",
+      "codigoQr": "PE-ENC-016"
+    },
+    {
+      "id": 17,
+      "alunoId": 1,
+      "cursoId": 9,
+      "titulo": "Oratória - Encontro 2",
+      "data": "2026-09-22",
+      "horario": "19:00",
+      "local": "FECAP - Liberdade, Sala 105",
+      "codigoQr": "PE-ENC-017"
+    },
+    {
+      "id": 18,
+      "alunoId": 1,
+      "cursoId": 10,
+      "titulo": "Tecnologia",
+      "data": "2026-09-26",
+      "horario": "09:00",
+      "local": "FECAP - Liberdade, Laboratório de Informática",
+      "codigoQr": "PE-ENC-018"
+    },
+    {
+      "id": 19,
+      "alunoId": 1,
+      "cursoId": 11,
+      "titulo": "Imagem Pessoal e Networking",
+      "data": "2026-10-03",
+      "horario": "09:00",
+      "local": "FECAP - Liberdade, Sala 302",
+      "codigoQr": "PE-ENC-019"
+    },
+    {
+      "id": 20,
+      "alunoId": 1,
+      "cursoId": 14,
+      "titulo": "Liderança - Encontro 1",
+      "data": "2026-10-06",
+      "horario": "19:00",
+      "local": "FECAP - Liberdade, Sala 210",
+      "codigoQr": "PE-ENC-020"
+    },
+    {
+      "id": 21,
+      "alunoId": 1,
+      "cursoId": 14,
+      "titulo": "Liderança - Encontro 2",
+      "data": "2026-10-13",
+      "horario": "19:00",
+      "local": "FECAP - Liberdade, Sala 210",
+      "codigoQr": "PE-ENC-021"
+    },
+    {
+      "id": 22,
+      "alunoId": 1,
+      "cursoId": 16,
+      "titulo": "Inovação e Criatividade",
+      "data": "2026-10-17",
+      "horario": "09:00",
+      "local": "FECAP - Liberdade, Sala Maker",
+      "codigoQr": "PE-ENC-022"
+    }
+  ],
+  "inscricoes": [
+    {
+      "id": 1,
+      "alunoId": 1,
+      "cursoId": 1,
+      "aulasAssistidas": 2,
+      "totalAulas": 2,
+      "concluido": true,
+      "dataConclusao": "2026-08-25",
+      "codigoCertificado": "PE-2026-0011037"
+    },
+    {
+      "id": 2,
+      "alunoId": 1,
+      "cursoId": 2,
+      "aulasAssistidas": 1,
+      "totalAulas": 1,
+      "concluido": true,
+      "dataConclusao": "2026-08-29",
+      "codigoCertificado": "PE-2026-0021074"
+    },
+    {
+      "id": 3,
+      "alunoId": 1,
+      "cursoId": 3,
+      "aulasAssistidas": 0,
+      "totalAulas": 1,
+      "concluido": false,
+      "dataConclusao": "",
+      "codigoCertificado": ""
+    },
+    {
+      "id": 4,
+      "alunoId": 1,
+      "cursoId": 5,
+      "aulasAssistidas": 1,
+      "totalAulas": 1,
+      "concluido": true,
+      "dataConclusao": "2026-09-05",
+      "codigoCertificado": "PE-2026-0051185"
+    },
+    {
+      "id": 5,
+      "alunoId": 1,
+      "cursoId": 6,
+      "aulasAssistidas": 3,
+      "totalAulas": 6,
+      "concluido": false,
+      "dataConclusao": "",
+      "codigoCertificado": ""
+    },
+    {
+      "id": 6,
+      "alunoId": 1,
+      "cursoId": 7,
+      "aulasAssistidas": 1,
+      "totalAulas": 4,
+      "concluido": false,
+      "dataConclusao": "",
+      "codigoCertificado": ""
+    },
+    {
+      "id": 7,
+      "alunoId": 1,
+      "cursoId": 9,
+      "aulasAssistidas": 2,
+      "totalAulas": 2,
+      "concluido": true,
+      "dataConclusao": "2026-09-22",
+      "codigoCertificado": "PE-2026-0091333"
+    },
+    {
+      "id": 8,
+      "alunoId": 1,
+      "cursoId": 10,
+      "aulasAssistidas": 1,
+      "totalAulas": 1,
+      "concluido": true,
+      "dataConclusao": "2026-09-26",
+      "codigoCertificado": "PE-2026-0101370"
+    },
+    {
+      "id": 9,
+      "alunoId": 1,
+      "cursoId": 11,
+      "aulasAssistidas": 1,
+      "totalAulas": 1,
+      "concluido": true,
+      "dataConclusao": "2026-10-03",
+      "codigoCertificado": "PE-2026-0111407"
+    },
+    {
+      "id": 10,
+      "alunoId": 1,
+      "cursoId": 14,
+      "aulasAssistidas": 2,
+      "totalAulas": 2,
+      "concluido": true,
+      "dataConclusao": "2026-10-13",
+      "codigoCertificado": "PE-2026-0141518"
+    },
+    {
+      "id": 11,
+      "alunoId": 1,
+      "cursoId": 16,
+      "aulasAssistidas": 1,
+      "totalAulas": 1,
+      "concluido": true,
+      "dataConclusao": "2026-10-17",
+      "codigoCertificado": "PE-2026-0161592"
+    }
+  ],
+  "checkins": [
+    {
+      "id": 1,
+      "alunoId": 1,
+      "agendaId": 1,
+      "codigoQr": "PE-ENC-001",
+      "dataHora": "2026-08-18 19:00:12"
+    },
+    {
+      "id": 2,
+      "alunoId": 1,
+      "agendaId": 2,
+      "codigoQr": "PE-ENC-002",
+      "dataHora": "2026-08-25 19:00:12"
+    },
+    {
+      "id": 3,
+      "alunoId": 1,
+      "agendaId": 3,
+      "codigoQr": "PE-ENC-003",
+      "dataHora": "2026-08-29 09:00:12"
+    },
+    {
+      "id": 4,
+      "alunoId": 1,
+      "agendaId": 5,
+      "codigoQr": "PE-ENC-005",
+      "dataHora": "2026-09-05 09:00:12"
+    },
+    {
+      "id": 5,
+      "alunoId": 1,
+      "agendaId": 6,
+      "codigoQr": "PE-ENC-006",
+      "dataHora": "2026-10-27 19:00:12"
+    },
+    {
+      "id": 6,
+      "alunoId": 1,
+      "agendaId": 7,
+      "codigoQr": "PE-ENC-007",
+      "dataHora": "2026-10-29 19:00:12"
+    },
+    {
+      "id": 7,
+      "alunoId": 1,
+      "agendaId": 8,
+      "codigoQr": "PE-ENC-008",
+      "dataHora": "2026-11-03 19:00:12"
+    },
+    {
+      "id": 8,
+      "alunoId": 1,
+      "agendaId": 12,
+      "codigoQr": "PE-ENC-012",
+      "dataHora": "2026-11-04 19:00:12"
+    },
+    {
+      "id": 9,
+      "alunoId": 1,
+      "agendaId": 16,
+      "codigoQr": "PE-ENC-016",
+      "dataHora": "2026-09-15 19:00:12"
+    },
+    {
+      "id": 10,
+      "alunoId": 1,
+      "agendaId": 17,
+      "codigoQr": "PE-ENC-017",
+      "dataHora": "2026-09-22 19:00:12"
+    },
+    {
+      "id": 11,
+      "alunoId": 1,
+      "agendaId": 18,
+      "codigoQr": "PE-ENC-018",
+      "dataHora": "2026-09-26 09:00:12"
+    },
+    {
+      "id": 12,
+      "alunoId": 1,
+      "agendaId": 19,
+      "codigoQr": "PE-ENC-019",
+      "dataHora": "2026-10-03 09:00:12"
+    },
+    {
+      "id": 13,
+      "alunoId": 1,
+      "agendaId": 20,
+      "codigoQr": "PE-ENC-020",
+      "dataHora": "2026-10-06 19:00:12"
+    },
+    {
+      "id": 14,
+      "alunoId": 1,
+      "agendaId": 21,
+      "codigoQr": "PE-ENC-021",
+      "dataHora": "2026-10-13 19:00:12"
+    },
+    {
+      "id": 15,
+      "alunoId": 1,
+      "agendaId": 22,
+      "codigoQr": "PE-ENC-022",
+      "dataHora": "2026-10-17 09:00:12"
+    }
+  ],
+  "notificacoes": [
+    {
+      "id": 1,
+      "titulo": "Novo curso disponível: Inteligência Artificial",
+      "mensagem": "O Inteli abriu vagas para a oficina de IA no dia 28/11. É um curso de dia único!",
+      "tipo": "novo_curso",
+      "data": "2026-11-05 10:00",
+      "cursoId": 15
+    },
+    {
+      "id": 2,
+      "titulo": "Simulação da ONU é neste sábado",
+      "mensagem": "Curso de dia único no Insper em 14/11, das 8h30 às 17h. Leve documento com foto e faça o check-in na entrada.",
+      "tipo": "aviso",
+      "data": "2026-11-07 18:30",
+      "cursoId": 3
+    },
+    {
+      "id": 3,
+      "titulo": "Certificados disponíveis no app",
+      "mensagem": "Agora você pode ver e compartilhar seus certificados direto pelo Perfil.",
+      "tipo": "aviso",
+      "data": "2026-11-02 09:00",
+      "cursoId": 0
+    },
+    {
+      "id": 4,
+      "titulo": "Novo curso disponível: Carreira 2.0",
+      "mensagem": "Monte seu currículo e seu LinkedIn com a FECAP em 12/12.",
+      "tipo": "novo_curso",
+      "data": "2026-11-01 14:00",
+      "cursoId": 8
+    }
+  ],
+  "mensagens": [
+    {
+      "id": 1,
+      "alunoId": 1,
+      "texto": "Olá! Bem-vindo(a) ao app da Próxima Etapa. Use este canal para tirar dúvidas sobre cursos, encontros e certificados.",
+      "autor": "ong",
+      "dataHora": "2026-11-01 09:00:00"
+    }
+  ]
+}

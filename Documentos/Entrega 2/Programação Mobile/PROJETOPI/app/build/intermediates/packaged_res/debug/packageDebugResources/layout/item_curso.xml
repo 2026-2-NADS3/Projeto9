@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Card de curso: imagem na lateral, faixa colorida (amarela = dia único) e etiquetas -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Material3.CardView.Elevated"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    app:cardCornerRadius="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/faixaLateral"
+            android:layout_width="6dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivCurso"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="Imagem do curso"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@id/faixaLateral"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCursoTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivCurso"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCursoInstituicao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceLabelLarge"
+            android:textColor="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@id/tvCursoTitulo"
+            app:layout_constraintStart_toStartOf="@id/tvCursoTitulo"
+            app:layout_constraintTop_toBottomOf="@id/tvCursoTitulo" />
+
+        <TextView
+            android:id="@+id/tvCursoDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintEnd_toEndOf="@id/tvCursoTitulo"
+            app:layout_constraintStart_toStartOf="@id/tvCursoTitulo"
+            app:layout_constraintTop_toBottomOf="@id/tvCursoInstituicao" />
+
+        <TextView
+            android:id="@+id/tvCursoPeriodo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            app:drawableStartCompat="@drawable/ic_agenda"
+            app:layout_constraintEnd_toEndOf="@id/tvCursoTitulo"
+            app:layout_constraintStart_toStartOf="@id/tvCursoTitulo"
+            app:layout_constraintTop_toBottomOf="@id/tvCursoDesc" />
+
+        <TextView
+            android:id="@+id/tvCursoCarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvCursoTitulo"
+            app:layout_constraintTop_toBottomOf="@id/tvCursoPeriodo" />
+
+        <!-- Etiquetas: DIA ÚNICO (marcação diferenciada) e situação da inscrição -->
+        <LinearLayout
+            android:id="@+id/layoutTags"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tvCursoTitulo"
+            app:layout_constraintStart_toStartOf="@id/tvCursoTitulo"
+            app:layout_constraintTop_toBottomOf="@id/tvCursoCarga">
+
+            <TextView
+                android:id="@+id/tvTagDiaUnico"
+                style="@style/TextoTag"
+                android:layout_marginEnd="6dp"
+                android:text="DIA ÚNICO" />
+
+            <TextView
+                android:id="@+id/tvTagStatus"
+                style="@style/TextoTag" />
+        </LinearLayout>
+
+        <!-- Espaço mínimo embaixo quando as etiquetas estão escondidas -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivCurso" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
